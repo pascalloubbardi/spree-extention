@@ -1,0 +1,23 @@
+
+In gem_file:
+
+gem 'spree_i18n', github: 'spree-contrib/spree_i18n', branch: '3-0-stable'
+
+Run bundle install 
+
+integrer a /config/locales le fichier fr.yml
+
+decocher dans config/application.rb :
+
+# The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.default_locale = :fr
+
+
+relancer les migrations =>
+
+1- bundle exec rake railties:install:migrations
+
+2- bundle exec rake db:migrate
+
+

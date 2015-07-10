@@ -1,0 +1,3 @@
+rake spree_auth:admin:create
+
+ca va creer un deusieme administrateur si un admin a deja ete creer
