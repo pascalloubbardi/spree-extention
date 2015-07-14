@@ -1,0 +1,26 @@
+united_states = Spree::Country.find_by_name!("United States")
+new_york = Spree::State.find_by_name!("New York")
+
+# Billing address
+Spree::Address.create!(
+  firstname: popo,
+  lastname: pupu,
+  address1: rue_popo,
+  address2: toto,
+  city: New_York,
+  state: new_york,
+  zipcode: 16804,
+  country: united_states,
+  phone: 0102030405)
+
+#Shipping address
+Spree::Address.create!(
+  firstname: popo,
+  lastname: pupu,
+  address1: rue_popo,
+  address2: toto,
+  city: New_York,
+  state: new_york,
+  zipcode: 16804,
+  country: united_states,
+  phone: 0102030405)
